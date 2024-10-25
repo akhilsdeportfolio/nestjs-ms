@@ -4,7 +4,7 @@
   "license": "MIT",
   "scripts": {
   "build":"npx nx run-many --t=build -all" , 
-  "start": "npm i && npx nx run-many --t=serve -all"
+  "start": "export NX_CLOUD=false && npm i && npx nx run-many --target=build --all --parallel=1"
   },
   "private": true,
   "dependencies": {

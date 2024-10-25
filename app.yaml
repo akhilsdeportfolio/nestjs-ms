@@ -1,0 +1,27 @@
+runtime: nodejs18
+instance_class: F2  # Adjust instance class based on required scaling and performance
+
+env_variables:
+  NODE_ENV: production
+  NX_CLOUD_ID: "671b18f98cf52f5d70a8cd69"
+  # Add additional environment variables as needed
+
+automatic_scaling:
+  target_cpu_utilization: 0.90
+  min_instances: 1
+  max_instances: 3
+
+entrypoint: yarn start:prod  # Or adjust based on Nx's production start command
+
+# Optional settings for improved performance
+resources:
+  cpu: 1
+  memory_gb: 2
+  disk_size_gb: 10
+
+# Static file handling for routes, if needed
+handlers:
+  - url: /static
+    static_dir: dist/apps/api-gateway
+  - url: /.*
+    script: auto
