@@ -12,10 +12,10 @@ import { MicroserviceOptions, Transport } from '@nestjs/microservices';
 async function bootstrap() {
   const app = await NestFactory.createMicroservice<MicroserviceOptions>(AppModule, {
     transport: Transport.REDIS, options: {
-      host: 'redis-13705.c305.ap-south-1-1.ec2.redns.redis-cloud.com',
-      port: 13705,
+      host: 'redis-15277.c330.asia-south1-1.gce.redns.redis-cloud.com',
+      port: 15277,
       username: "default",
-      password: "CmErQ9pfUcp87kSsjpD5JOhe6FjQfjXs",
+      password: "VUdSokGZ3UjyVuovsPNCPS0O3fXb2jYD",
     }
   });
   await app.listen();
