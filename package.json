@@ -3,8 +3,8 @@
   "version": "0.0.0",
   "license": "MIT",
   "scripts": {
-  "build":"npx nx run-many --t=build -all" , 
-  "start": "export NX_CLOUD=false && npm i && npx nx run-many --target=build --all --parallel=1"
+  "build":"npx nx run-many --t=build --all --parallel=1" , 
+  "start": "export NX_CLOUD=false && npm i && npx nx run-many --target=serve --configuration=production --all --parallel=1"
   },
   "private": true,
   "dependencies": {
