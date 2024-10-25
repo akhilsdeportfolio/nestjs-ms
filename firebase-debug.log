@@ -1,0 +1,58 @@
+[debug] [2024-10-25T06:17:03.760Z] ----------------------------------------------------------------------
+[debug] [2024-10-25T06:17:03.761Z] Command:       /Users/akamsala/.nvm/versions/node/v18.19.1/bin/node /Users/akamsala/.nvm/versions/node/v18.19.1/bin/firebase init functions
+[debug] [2024-10-25T06:17:03.761Z] CLI Version:   13.22.0
+[debug] [2024-10-25T06:17:03.762Z] Platform:      darwin
+[debug] [2024-10-25T06:17:03.762Z] Node Version:  v18.19.1
+[debug] [2024-10-25T06:17:03.763Z] Time:          Fri Oct 25 2024 11:47:03 GMT+0530 (India Standard Time)
+[debug] [2024-10-25T06:17:03.763Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-10-25T06:17:03.767Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-10-25T06:17:03.767Z] > authorizing via signed-in user (devsakhil96@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  /Users/akamsala/Desktop/backend
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[info] i  If you want to create a project in a Google Cloud organization or folder, please use "firebase projects:create" instead, and return to this command when you've created the project. 
+[debug] [2024-10-25T06:17:16.830Z] Checked if tokens are valid: true, expires at: 1729840577697
+[debug] [2024-10-25T06:17:16.831Z] Checked if tokens are valid: true, expires at: 1729840577697
+[debug] [2024-10-25T06:17:16.832Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects [none]
+[debug] [2024-10-25T06:17:16.833Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects {"projectId":"akhil-backend-testing","name":"akhil-backend-testing"}
+[debug] [2024-10-25T06:17:19.095Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects 200
+[debug] [2024-10-25T06:17:19.095Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects {"name":"operations/cp.7817347997409028220"}
+[debug] [2024-10-25T06:17:19.096Z] Checked if tokens are valid: true, expires at: 1729840577697
+[debug] [2024-10-25T06:17:19.096Z] Checked if tokens are valid: true, expires at: 1729840577697
+[debug] [2024-10-25T06:17:19.096Z] >>> [apiv2][query] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.7817347997409028220 [none]
+[debug] [2024-10-25T06:17:21.242Z] <<< [apiv2][status] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.7817347997409028220 200
+[debug] [2024-10-25T06:17:21.243Z] <<< [apiv2][body] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.7817347997409028220 {"name":"operations/cp.7817347997409028220"}
+[debug] [2024-10-25T06:17:21.745Z] [Project Creation Poller] Retrying task index 0
+[debug] [2024-10-25T06:17:21.746Z] Checked if tokens are valid: true, expires at: 1729840577697
+[debug] [2024-10-25T06:17:21.747Z] Checked if tokens are valid: true, expires at: 1729840577697
+[debug] [2024-10-25T06:17:21.747Z] >>> [apiv2][query] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.7817347997409028220 [none]
+[debug] [2024-10-25T06:17:24.007Z] <<< [apiv2][status] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.7817347997409028220 200
+[debug] [2024-10-25T06:17:24.008Z] <<< [apiv2][body] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.7817347997409028220 {"name":"operations/cp.7817347997409028220","metadata":{"@type":"type.googleapis.com/google.cloudresourcemanager.v1.ProjectCreationStatus","gettable":true,"ready":true},"done":true,"response":{"@type":"type.googleapis.com/google.cloudresourcemanager.v1.Project","projectNumber":"33579200496","projectId":"akhil-backend-testing","lifecycleState":"ACTIVE","name":"akhil-backend-testing","createTime":"2024-10-25T06:17:20.713192Z"}}
+[debug] [2024-10-25T06:17:24.010Z] Checked if tokens are valid: true, expires at: 1729840577697
+[debug] [2024-10-25T06:17:24.010Z] Checked if tokens are valid: true, expires at: 1729840577697
+[debug] [2024-10-25T06:17:24.010Z] >>> [apiv2][query] POST https://firebase.googleapis.com/v1beta1/projects/akhil-backend-testing:addFirebase [none]
+[debug] [2024-10-25T06:17:25.852Z] <<< [apiv2][status] POST https://firebase.googleapis.com/v1beta1/projects/akhil-backend-testing:addFirebase 403
+[debug] [2024-10-25T06:17:25.852Z] <<< [apiv2][body] POST https://firebase.googleapis.com/v1beta1/projects/akhil-backend-testing:addFirebase {"error":{"code":403,"message":"The caller does not have permission","status":"PERMISSION_DENIED"}}
+[debug] [2024-10-25T06:17:25.853Z] HTTP Error: 403, The caller does not have permission
+[debug] [2024-10-25T06:17:26.141Z] FirebaseError: HTTP Error: 403, The caller does not have permission
+    at responseToError (/Users/akamsala/.nvm/versions/node/v18.19.1/lib/node_modules/firebase-tools/lib/responseToError.js:49:12)
+    at RetryOperation._fn (/Users/akamsala/.nvm/versions/node/v18.19.1/lib/node_modules/firebase-tools/lib/apiv2.js:312:77)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+[error] 
+[error] Error: Failed to add Firebase to Google Cloud Platform project. See firebase-debug.log for more info.

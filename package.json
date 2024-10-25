@@ -2,13 +2,18 @@
   "name": "@backend/source",
   "version": "0.0.0",
   "license": "MIT",
-  "scripts": {},
+  "scripts": {
+  "build":"npx nx run-many --t=build -all" , 
+  "start": "npm i && npx nx run-many --t=serve -all"
+  },
   "private": true,
   "dependencies": {
     "@nestjs/common": "^10.0.2",
     "@nestjs/core": "^10.0.2",
+    "@nestjs/microservices": "^10.4.6",
     "@nestjs/platform-express": "^10.0.2",
     "axios": "^1.6.0",
+    "ioredis": "^5.4.1",
     "reflect-metadata": "^0.1.13",
     "rxjs": "^7.8.0"
   },
